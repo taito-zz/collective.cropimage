@@ -36,6 +36,7 @@
     attribute="image_fields"
     class=".miscellaneous.Miscellaneous"
     for="*"
+    layer=".interfaces.ICollectiveCropimageLayer"
     name="image-fields"
     permission="cmf.ModifyPortalContent"
     />
@@ -44,6 +45,7 @@
     attribute="has_image"
     class=".miscellaneous.Miscellaneous"
     for="*"
+    layer=".interfaces.ICollectiveCropimageLayer"
     name="has-image"
     permission="cmf.ModifyPortalContent"
     />
@@ -52,6 +54,7 @@
     attribute="cropped_image"
     class=".miscellaneous.Miscellaneous"
     for="*"
+    layer=".interfaces.ICollectiveCropimageLayer"
     name="cropped-image"
     permission="zope2.View"
     />

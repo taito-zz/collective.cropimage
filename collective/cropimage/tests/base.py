@@ -7,7 +7,7 @@ from plone.testing import z2
 import unittest2 as unittest
 
 
-class InicieCropimageLayer(PloneSandboxLayer):
+class CollectiveCropimageLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -28,11 +28,11 @@ class InicieCropimageLayer(PloneSandboxLayer):
         z2.uninstallProduct(app, 'collective.cropimage')
 
 
-FIXTURE = InicieCropimageLayer()
+FIXTURE = CollectiveCropimageLayer()
 INTEGRATION_TESTING = IntegrationTesting(
-    bases=(FIXTURE,), name="InicieCropimageLayer:Integration")
+    bases=(FIXTURE,), name="CollectiveCropimageLayer:Integration")
 FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(FIXTURE,), name="InicieCropimageLayer:Functional")
+    bases=(FIXTURE,), name="CollectiveCropimageLayer:Functional")
 
 
 class IntegrationTestCase(unittest.TestCase):
